@@ -158,5 +158,5 @@ form textarea {
   @apply text-center text-primary-color;
 }
 .p{
-  @apply text-red text-xs text-center;
+  @apply text-red text-[0.4rem] text-center;
 }
