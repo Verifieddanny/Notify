@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @layer utilities {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+}
+@layer base {
+  html {
+    font-family: poppins;
+  }
+  :root {
+    --primary: #12bca2;
+    --secondary: #6d15df;
+  }
+}
+
+* {
+  @apply m-0 p-0 box-border select-none scroll-smooth transition-all duration-500;
+}
+
+body {
+  @apply w-[100vw] h-full no-scrollbar font-custom bg-[#f2f2f2] text-[#333];
+}
+#root {
+  width: 100vw;
+  height: fit-content;
+}
+h3 {
+  @apply text-2xl font-semibold mb-[0.5rem];
+}
+nav {
+  @apply w-full  bg-primary-color py-[10px] px-[20px] text-center;
+}
+
+nav a {
+  @apply text-[#f2f2f2] m-[0.625rem] inline-block no-underline text-xl;
+}
+
+nav h1 {
+  @apply text-[#fff] flex items-center justify-center text-4xl font-bold;
+}
+
+.page {
+  @apply w-full my-[1.25rem] mx-auto p-[1.25rem];
+}
+
+.prev i {
+  @apply absolute top-[4rem] left-[1rem] text-[#ffffff] flex justify-center items-center text-[1.2rem] bg-primary-color cursor-pointer rounded-full p-[0.375rem];
+}
+.landing {
+  @apply w-full h-[100vh] bg-primary-color text-[#ffffff] flex md:flex-row  flex-col justify-center items-center gap-[4rem];
+}
+.land span {
+  @apply flex lg:justify-start justify-center gap-4 font-medium;
+}
+.land span a {
+  @apply py-[0.25rem] px-[0.5rem] rounded-md bg-[#ffffff] text-primary-color;
+}
+/* forms */
+form {
+  @apply bg-[#fff] p-[1.25rem] max-w-[30rem] mx-auto rounded-md;
+}
+
+form input,
+form textarea {
+  @apply block w-full p-[0.375rem] box-border border-[1px] border-s-[#ccc] mt-[0.625rem] mb-[1.25rem];
+}
+form textarea {
+  @apply min-h-[15rem];
+}
+
+.sub {
+  @apply bg-primary-color text-[#fff] border-0 rounded-md py-[0.355rem] px-[0.5rem]  flex justify-center items-center  cursor-pointer;
+}
+
+.page p {
+  @apply w-full text-center;
+}
+
+/* smoothie grid */
+
+.smoothie-grid {
+  @apply mt-[2.5rem] w-full flex flex-wrap items-start justify-center gap-[2.5rem];
+}
+
+.smoothie-card {
+  @apply w-[21rem] p-[0.625rem] bg-primary-color box-border rounded-md pt-[2rem] drop-shadow-xl overflow-x-hidden;
+}
+
+.max {
+  @apply max-h-[32rem] overflow-hidden;
+}
+
+.smoothie-card h3 {
+  @apply text-center;
+}
+.smoothie-card p {
+  font-family: "Marck Script", cursive;
+  background-image: -moz-linear-gradient(
+      top,
+      transparent,
+      transparent 49px,
+      #e7eff8 0px
+    ),
+    -moz-radial-gradient(4% 50%, circle closest-corner, #f5f5f5, #f5f5f5 39%, transparent
+          0%),
+    -moz-radial-gradient(3.9% 46%, circle closest-corner, #cccccc, #cccccc 43.5%, transparent
+          0%);
+  background-image: -webkit-linear-gradient(
+      top,
+      transparent,
+      transparent 49px,
+      #e7eff8 0
+    ),
+    -webkit-radial-gradient(4% 50%, circle closest-corner, #f5f5f5, #f5f5f5 39%, transparent
+          0%),
+    -webkit-radial-gradient(3.9% 46%, circle closest-corner, #cccccc, #cccccc
+          43.5%, transparent 0%);
+
+  -webkit-background-size: 100% 50px;
+  background-size: 100% 50px;
+}
+.smoothie-card p {
+  @apply block leading-[3.125rem] mt-[2%] mx-auto pl-[2rem] pt-[0.5rem] pr-[0.8rem] resize-none w-full break-all;
+}
+.smoothie-card .buttons {
+  @apply text-center w-full flex justify-center gap-x-[2rem] items-center mt-[1rem];
+}
+
+.smoothie-card i {
+  @apply text-[#bbb] text-[1.2rem] p-[0.375rem] bg-[#eee] rounded-full cursor-pointer;
+}
+.notepad {
+  @apply px-[3rem];
+}
+/* order-by buttons */
+.order-by button {
+  @apply mr-[0.625rem] bg-primary-color text-[#fff] border-0 py-[0.25rem] px-[0.5rem] rounded-md;
+}
+.order-by p {
+  @apply font-semibold;
+}
+
+.h3 {
+  @apply text-center text-primary-color;
+}
