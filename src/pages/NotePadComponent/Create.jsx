@@ -72,7 +72,7 @@ function Create({ token }) {
             value={note}
             onChange={(e) => setNote(e.target.value)}
           />
-          <button>Create note</button>
+          <button className="sub" >Create note</button>
         </form>
       </div>
       <ToastContainer
