@@ -157,3 +157,6 @@ form textarea {
 .h3 {
   @apply text-center text-primary-color;
 }
+.p{
+  @apply text-red text-xs text-center;
+}
