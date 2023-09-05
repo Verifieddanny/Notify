@@ -18,7 +18,7 @@ function SignUp() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!formData.fullname || !formData.email || !formData.password) {
+    if (!formData.fullname || !formData.email || formData.password.length < 6) {
       toast.warn("Please fill in all the fields correctly", {
         position: "top-center",
         autoClose: 5000,
@@ -98,6 +98,7 @@ function SignUp() {
             name="password"
             onChange={handleChange}
           />
+          <p className="p">*password should be up to 6 characters*</p>
 
           <button type="submit" className="sub">
             Submit
